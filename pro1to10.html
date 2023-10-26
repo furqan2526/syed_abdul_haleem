@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grater or lessthan</title>
+</head>
+<body>
+    <input type="number" id="input">
+    <button onclick="check()">Check</button>
+    <h3 id="out">result:</h3>
+    <script>
+        function check(){
+            var x=parseInt(document.getElementById("input").value);
+            if(isNaN(x)){
+                document.getElementById("out").innerHTML="this is not a number";
+            }else if(x<1){
+                document.getElementById("out").innerHTML="Given number is lessthan 1";
+            }else if(x>10){
+                document.getElementById("out").innerHTML="Given number is greater than 10";
+            }else{
+                document.getElementById("out").innerHTML="ok! it is between 1 to 10";
+            }
+        }
+    </script>
+    <script>
+        function check(){
+            var x=parseInt(document.getElementById("input").value);
+            if(isNaN(x) || (x<1) || (x>10)){
+                document.getElementById("out").innerHTML="this is not a number";
+
+            }else{
+                document.getElementById("out").innerHTML="this is ok";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+</head>
+<body>
+    <label for="name">Enter Name :</label>
+    <input type="text" id="as">
+    <h1 id="we">Pleasa text</h1>
+    <br>
+    <button onclick="Enter()">Enter</button>
+    <script>
+        function Enter(){
+            var name=document.getElementById('as').value;
+            window.alert(" you have typed :"+name);
+            document.getElementById('we').innerHTML=name;
+            
+        }
+        
+    </script>
+</body>
+</html>

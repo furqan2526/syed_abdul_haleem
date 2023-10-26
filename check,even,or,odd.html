@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If statement example</title>
+</head>
+<body>
+    <h1>If statement Example</h1>
+    <p>Enter a number to check if it's greater than 10:</p>
+    <input type="number" id="numberinput">
+    <button onclick="checkNumber()">Check</button>
+    <p id="result"></p>
+    <script>
+        function checkNumber(){
+            const number =parseInt(document.getElementById('numberinput').value);
+            if(isNaN(number)){
+                document.getElementById('result').textContent = "Please enter a valid number.";
+            }
+            else{
+                if(number > 10){
+                    document.getElementById('result').textContent = number+' is greater than 10.';
+
+                } else {
+                    document.getElementById('result').textContent = number+' is not greater than 10.';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

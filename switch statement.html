@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript switch statement Example</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            font-weight: 900;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>JavaScript switch statement Example</h1>
+    <script>
+        var day =5;
+        var dayname;
+        switch (day){
+            case 1:
+            dayname = "monday";
+            break;
+        
+       
+            case 2:
+            dayname = "Tuesday";
+            break;
+      
+            case 3:
+            dayname = "wednesday";
+            break;
+       
+            case 4:
+            dayname = "Thursday";
+            break;
+      
+            case 5:
+            dayname = "Friday";
+            break;
+       
+            case 6:
+            dayname = "saturday";
+            break;
+        
+      
+            case 7:
+            dayname = "Sunday";
+            break;
+            default:
+                dayname = "invalid day";
+                break;
+        }
+        document.write("Day: " + dayname);
+
+    </script>
+</body>
+</html>
